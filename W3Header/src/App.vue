@@ -1,10 +1,12 @@
 <script>
-import NewHeader from './components/NewHeader.vue'
+import NewHeader from './components/NewHeader.vue';
+import NavLink from './components/NavLink.vue'
 
 export default {
     name: 'App',
     components:{
-      NewHeader
+      NewHeader,
+      NavLink
     }
 }
 </script>

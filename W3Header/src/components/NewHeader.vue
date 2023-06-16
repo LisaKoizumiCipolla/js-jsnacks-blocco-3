@@ -1,16 +1,18 @@
 <template>
     <ul>
-        <li v-for="link in links">
-            {{ link }}
-        </li>
+        <NavLink v-for=" linkObj in linksList"
+            :linkElement="pastaObj" 
+        />
     </ul>
 </template>
 
 <script>
+import NavLink from './NavLink.vue';
+
     export default{
         data() {
             return{
-            links : [
+            linksList : [
                 "uno",
                 "due",
                 "tre",
@@ -19,6 +21,9 @@
 
             }
         },
+        components:{
+            NavLink
+        }
     }
 </script>
 
