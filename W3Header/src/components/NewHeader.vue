@@ -1,7 +1,7 @@
 <template>
     <ul>
         <NavLink v-for=" linkObj in linksList"
-            :linkElement="pastaObj" 
+            :linkElement="linkObj" 
         />
     </ul>
 </template>
